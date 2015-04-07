@@ -13,6 +13,8 @@
 #
 #   r = Plist::parse_xml( filename_or_xml )
 module Plist
+    Encoding.default_external = Encoding::UTF_8
+    Encoding.default_internal = Encoding::UTF_8
 # Note that I don't use these two elements much:
 #
 #  + Date elements are returned as DateTime objects.
@@ -63,12 +65,15 @@ module Plist
     def initialize( plist_data_or_file, listener )
       if plist_data_or_file.respond_to? :read
         @xml = plist_data_or_file.read
+      elsif plist_data_or_file =~ /\x00/
+        @xml = plist_data_or_file
       elsif File.exists? plist_data_or_file
         @xml = File.read( plist_data_or_file )
       else
         @xml = plist_data_or_file
       end
 
+      @xml = @xml.force_encoding('UTF-8')
       @listener = listener
     end
 
