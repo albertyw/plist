@@ -1,5 +1,7 @@
 = All-purpose Property List manipulation library
 
+{<img alt="Status?branch=master" src="https://codeship.com/projects/3b26f2d0-bf92-0132-7a19-3a4372b16de9/status?branch=master" />}[https://codeship.com/projects/73003]
+
 This repository is forked from the abandoned https://github.com/bleything/plist with updates
 
 Plist is a library to manipulate Property List files, also known as plists.  It can parse plist files into native Ruby data structures as well as generating new plist files from your Ruby objects.
