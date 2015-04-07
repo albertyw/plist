@@ -1,5 +1,7 @@
 = All-purpose Property List manipulation library
 
+This repository is forked from the abandoned https://github.com/bleything/plist with updates
+
 Plist is a library to manipulate Property List files, also known as plists.  It can parse plist files into native Ruby data structures as well as generating new plist files from your Ruby objects.
 
 == Usage
@@ -109,12 +111,6 @@ When you attempt to serialize a +MyFancyString+ object, the +to_plist_node+ meth
 
 If for whatever reason you can't add this method, your object will be serialized with <tt>Marshal.dump</tt> instead.
 
-== Links
-
-[Project Page]  http://plist.rubyforge.org
-[GitHub]        http://github.com/bleything/plist
-[RDoc]          http://plist.rubyforge.org
-
 == Credits
 
 plist is maintained by Ben Bleything <mailto:ben@bleything.net> and Patrick May <mailto:patrick@hexane.org>.  Patrick wrote most of the code; Ben is a recent addition to the project, having merged in his plist generation library.
@@ -126,33 +122,3 @@ Other folks who have helped along the way:
 [<b>Mat Schaffer</b>] who supplied code and test cases for <tt><data></tt> elements
 [<b>Michael Granger</b>] for encouragement and help
 [<b>Carsten Bormann, Chris Hoffman, Dana Contreras, Hongli Lai, Johan Sørensen</b>] for contributing Ruby 1.9.x compatibility fixes
-
-== License and Copyright
-
-plist is released under the MIT License.
-
-Portions of the code (notably the Rakefile) contain code pulled and/or adapted from other projects.  These files contain a comment at the top describing what was used.
-
-=== MIT License
-
-Copyright (c) 2006-2010, Ben Bleything <ben@bleything.net> and Patrick May <patrick@hexane.org>
-
-Permission is hereby granted, free of charge, to any person obtaining
-a copy of this software and associated documentation files (the
-"Software"), to deal in the Software without restriction, including
-without limitation the rights to use, copy, modify, merge, publish,
-distribute, sublicense, and/or sell copies of the Software, and to
-permit persons to whom the Software is furnished to do so, subject to
-the following conditions:
-
-The above copyright notice and this permission notice shall be included
-in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY
-KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
-WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
-NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
-LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
-OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
-WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
