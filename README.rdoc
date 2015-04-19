@@ -2,6 +2,7 @@
 
 {<img alt="Status?branch=master" src="https://codeship.com/projects/3b26f2d0-bf92-0132-7a19-3a4372b16de9/status?branch=master" />}[https://codeship.com/projects/73003]
 {<img src="https://codeclimate.com/github/cellabus/plist/badges/gpa.svg" />}[https://codeclimate.com/github/cellabus/plist]
+{<img src="https://gemnasium.com/cellabus/plist.svg" alt="Dependency Status" />}[https://gemnasium.com/cellabus/plist]
 
 This repository is forked from the abandoned https://github.com/bleything/plist with updates
 
