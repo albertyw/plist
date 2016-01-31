@@ -67,7 +67,7 @@ module Plist
         @xml = plist_data_or_file.read
       elsif plist_data_or_file =~ /\x00/
         @xml = plist_data_or_file
-      elsif File.exists? plist_data_or_file
+      elsif File.exist? plist_data_or_file
         @xml = File.read( plist_data_or_file )
       else
         @xml = plist_data_or_file
