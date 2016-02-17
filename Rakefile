@@ -35,11 +35,11 @@ RELEASE_FILES = [ "Rakefile", "README.rdoc", "CHANGELOG", "LICENSE" ] + LIB_FILE
 
 task :default => [ :test ]
 # Run the unit tests
-Rake::TestTask.new { |t|
+Rake::TestTask.new do |t|
   t.libs << "test"
-  t.test_files = TEST_FILES
+  t.test_files = ['test/test']
   t.verbose = true
-}
+end
 
 desc "Clean pkg and rdoc; remove .bak files"
 task :clean => [ :clobber_rdoc, :clobber_package ] do
