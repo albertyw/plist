@@ -35,27 +35,16 @@ RELEASE_FILES = [ "Rakefile", "README.rdoc", "CHANGELOG", "LICENSE" ] + LIB_FILE
 
 task :default => [ :test ]
 # Run the unit tests
-Rake::TestTask.new { |t|
+Rake::TestTask.new do |t|
   t.libs << "test"
-  t.test_files = TEST_FILES
+  t.test_files = ['test/test']
   t.verbose = true
-}
+end
 
-desc "Clean pkg, coverage, and rdoc; remove .bak files"
-task :clean => [ :clobber_rdoc, :clobber_package, :clobber_coverage ] do
+desc "Clean pkg and rdoc; remove .bak files"
+task :clean => [ :clobber_rdoc, :clobber_package ] do
   puts cmd = "find . -type f -name *.bak -delete"
   `#{cmd}`
-end
-
-task :clobber_coverage do
-  puts cmd = "rm -rf coverage"
-  `#{cmd}`
-end
-
-desc "Generate coverage analysis with rcov (requires rcov to be installed)"
-task :rcov => [ :clobber_coverage ] do
-  puts cmd = "rcov -Ilib --xrefs -T test/*.rb"
-  puts `#{cmd}`
 end
 
 desc "Strip trailing whitespace and fix newlines for all release files"
