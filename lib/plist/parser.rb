@@ -43,7 +43,7 @@ module Plist
     end
 
 
-    def tag_start(name, attributes)
+    def tag_start(name)
       @open.push PTag::mappings[name].new
     end
 
@@ -98,7 +98,7 @@ module Plist
         elsif @scanner.scan(XMLDECL_PATTERN)
         elsif @scanner.scan(DOCTYPE_PATTERN)
         elsif @scanner.scan(start_tag)
-          @listener.tag_start(@scanner[1], nil)
+          @listener.tag_start(@scanner[1])
           if (@scanner[2] =~ /\/$/)
             @listener.tag_end(@scanner[1])
           end
@@ -218,7 +218,7 @@ module Plist
       data = Base64.decode64(text.gsub(/\s+/, '')) unless text.nil?
       begin
         return Marshal.load(data)
-      rescue Exception => e
+      rescue TypeError
         io = StringIO.new
         io.write data
         io.rewind

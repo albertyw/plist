@@ -56,7 +56,6 @@ module Plist::Emit
     end
   end
 
-  private
   def self.plist_node(element)
     output = ''
 
@@ -134,7 +133,7 @@ module Plist::Emit
       out.lower_indent
       out << "</#{type}>"
     else
-      out = "<#{type}>#{contents.to_s}</#{type}>\n"
+      out = "<#{type}>#{contents}</#{type}>\n"
     end
 
     return out.to_s
@@ -169,7 +168,7 @@ module Plist::Emit
       raise "Don't know about this data type... something must be wrong!"
     end
   end
-  private
+
   class IndentedString #:nodoc:
     attr_accessor :indent_string
 
