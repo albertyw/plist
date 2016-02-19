@@ -51,7 +51,7 @@ module Plist
       @open.last.text = contents if @open.last
     end
 
-    def tag_end(name)
+    def tag_end
       last = @open.pop
       if @open.empty?
         @result = last.to_ruby
@@ -100,12 +100,12 @@ module Plist
         elsif @scanner.scan(start_tag)
           @listener.tag_start(@scanner[1])
           if (@scanner[2] =~ /\/$/)
-            @listener.tag_end(@scanner[1])
+            @listener.tag_end
           end
         elsif @scanner.scan(TEXT)
           @listener.text(@scanner[1])
         elsif @scanner.scan(end_tag)
-          @listener.tag_end(@scanner[1])
+          @listener.tag_end
         else
           raise "Unimplemented element"
         end
