@@ -3,6 +3,7 @@
 # = plist
 #
 # Copyright 2006-2010 Ben Bleything and Patrick May
+# Copyright 2015-2016 Albert Wang and Cellabus, Inc.
 # Distributed under the MIT License
 #
 

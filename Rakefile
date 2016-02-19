@@ -5,6 +5,7 @@
 # Includes whitespace-fixing task based on code from Typo.
 #
 # Copyright 2006-2010 Ben Bleything and Patrick May
+# Copyright 2015-2016 Albert Wang and Cellabus, Inc.
 # Distributed under the MIT License
 #
 
@@ -122,8 +123,8 @@ spec = Gem::Specification.new do |s|
 Plist is a library to manipulate Property List files, also known as plists.  It can parse plist files into native Ruby data structures as well as generating new plist files from your Ruby objects.
 EOD
 
-  s.authors  = "Ben Bleything and Patrick May"
-  s.homepage = "http://plist.rubyforge.org"
+  s.authors  = "Ben Bleything, Patrick May, and Albert Wang"
+  s.homepage = "http://github.com/cellabus/plist"
 
   s.rubyforge_project = RUBYFORGE_PROJECT
 

@@ -118,6 +118,8 @@ If for whatever reason you can't add this method, your object will be serialized
 
 == Credits
 
+Current maintainer: Albert Wang (https://github.com/albertyw)
+
 plist is maintained by Ben Bleything <mailto:ben@bleything.net> and Patrick May <mailto:patrick@hexane.org>.  Patrick wrote most of the code; Ben is a recent addition to the project, having merged in his plist generation library.
 
 Other folks who have helped along the way:
