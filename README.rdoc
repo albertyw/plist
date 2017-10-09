@@ -1,9 +1,9 @@
 = All-purpose Property List manipulation library
 
 {<img alt="Status?branch=master" src="https://codeship.com/projects/3b26f2d0-bf92-0132-7a19-3a4372b16de9/status?branch=master" />}[https://codeship.com/projects/73003]
-{<img src="https://codeclimate.com/github/cellabus/plist/badges/gpa.svg" />}[https://codeclimate.com/github/cellabus/plist]
-{<img src="https://codeclimate.com/github/cellabus/plist/badges/coverage.svg" />}[https://codeclimate.com/github/cellabus/plist/coverage]
-{<img src="https://gemnasium.com/cellabus/plist.svg" alt="Dependency Status" />}[https://gemnasium.com/cellabus/plist]
+{<img src="https://codeclimate.com/github/albertyw/plist/badges/gpa.svg" />}[https://codeclimate.com/github/albertyw/plist]
+{<img src="https://codeclimate.com/github/albertyw/plist/badges/coverage.svg" />}[https://codeclimate.com/github/albertyw/plist/coverage]
+{<img src="https://gemnasium.com/albertyw/plist.svg" alt="Dependency Status" />}[https://gemnasium.com/albertyw/plist]
 
 This repository is forked from the abandoned https://github.com/bleything/plist with updates
 
