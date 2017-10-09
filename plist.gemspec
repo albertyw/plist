@@ -20,4 +20,6 @@ EOD
   s.test_files    = s.files.grep(%r{^(test|spec|features)/})
 
   s.require_paths = ['lib']
+
+  spec.add_development_dependency "simplecov"
 end
