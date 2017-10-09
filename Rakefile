@@ -124,7 +124,7 @@ Plist is a library to manipulate Property List files, also known as plists.  It 
 EOD
 
   s.authors  = "Ben Bleything, Patrick May, and Albert Wang"
-  s.homepage = "http://github.com/cellabus/plist"
+  s.homepage = "http://github.com/albertyw/plist"
 
   s.rubyforge_project = RUBYFORGE_PROJECT
 
