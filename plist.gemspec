@@ -21,5 +21,5 @@ EOD
 
   s.require_paths = ['lib']
 
-  spec.add_development_dependency "simplecov"
+  s.add_development_dependency "simplecov"
 end
