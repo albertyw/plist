@@ -4,7 +4,7 @@ name: test
 
 steps:
   - name: Test Ruby
-    image: ruby:3.1
+    image: ruby:2.1
     commands:
       - gem install codeclimate-test-reporter
       - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > "${HOME}/bin/cc-test-reporter"
