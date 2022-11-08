@@ -3,7 +3,6 @@
 {<img alt="Build Status" src="https://drone.albertyw.com/api/badges/albertyw/plist/status.svg" />}[https://drone.albertyw.com/albertyw/plist]
 {<img src="https://codeclimate.com/github/albertyw/plist/badges/gpa.svg" />}[https://codeclimate.com/github/albertyw/plist]
 {<img src="https://codeclimate.com/github/albertyw/plist/badges/coverage.svg" />}[https://codeclimate.com/github/albertyw/plist/coverage]
-{<img src="https://gemnasium.com/albertyw/plist.svg" alt="Dependency Status" />}[https://gemnasium.com/albertyw/plist]
 
 This repository is forked from the abandoned https://github.com/bleything/plist with updates
 
