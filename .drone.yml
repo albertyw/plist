@@ -1,0 +1,16 @@
+kind: pipeline
+type: docker
+name: test
+
+steps:
+  - name: Test Ruby
+    image: ruby:3.1
+    commands:
+      - gem install codeclimate-test-reporter
+      - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > "${HOME}/bin/cc-test-reporter"
+      - chmod +x "${HOME}/bin/cc-test-reporter"
+      - cc-test-reporter before-build
+      - rake
+      - cc-test-reporter after-build --exit-code $? --prefix /home/rof/src/github.com/albertyw/plist
+    environment:
+      CC_TEST_REPORTER_ID: 90daf00f6db64acf6c954a2d0f885f5fc01d832a000716d7396859b41efb8d1d
